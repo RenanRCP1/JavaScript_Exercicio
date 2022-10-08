@@ -12,23 +12,25 @@
 
 <body>
     <section class="container">
-        <h3>
-            Escreva um programa para ler uma temperatura em graus Celsius, calcular e escrever o valor
-            correspondente em graus Fahrenheit. (F = (C * 9/5) + 32)
-        </h3>
-        <label>Qual a temperatura?</label>
-        <input type="text" value="0" id="temp">
-        <button onclick="calcularTemp()">Calcular</button>
+        <p>
+            3) Escreva um programa para ler uma temperatura em graus Celsius, calcular e escrever o valor correspondente
+            em graus Fahrenheit. (F = (C * 9/5) + 32)
+        </p>
+        <label for="temperaturaEntrada">Qual a temperatura?</label>
+        <input type="text" value="0" id="temperaturaEntrada">
+        <button onclick="calcularTemperatura()">Calcular</button>
+
+        <span id="saidaTexto"></span>
+
     </section>
-    <div class="container" id="texto"></div>
 </body>
 
 <script>
-    function calcularTemp() {
-        var temperatura = document.getElementById("temp").value;
-        var f = (temperatura * 9 / 5) + 32
-        console.log(f);
-        document.getElementById("texto").innerHTML = "<div class='alert alert-danger'>Temperatura em Fahrenheit: " + f + "</div>";
+    function calcularTemperatura() {
+        var celsius = document.getElementById("temperaturaEntrada").value;
+        var f = (celsius * 9 / 5) + 32;
+        //alert("Temperatura:" + f);
+        document.getElementById("saidaTexto").innerHTML = "<p>Temperatura: <b>" + f + "</b></p>";
     }
 </script>
 
