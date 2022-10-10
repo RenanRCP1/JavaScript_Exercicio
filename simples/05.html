@@ -35,11 +35,11 @@
 
             <div class="form-groups">
                 <label for="altura">qual a altura em metros?</label>
-                <input type="nunber" name="comprimento" id="comprimento" value="0" class="form-control">
+                <input type="nunber" name="altura" id="altura" value="0" class="form-control">
 
             </div>
             <div class="form-groups">
-                <button type="button" class="btn btn-outline-primary" onclick="controllerCalculo()">Calcular</button>
+                <button type="button" class="btn btn-outline-primary" onClick="controllerCalculo()">Calcular</button>
                 <button type="reset" class="btn btn-outline-primary">Limpar</button>
             </div>
 
@@ -63,7 +63,7 @@
 
     function calculoQuantidadeAzulejos(comprimento = 0, largura = 0, altura = 0) {
         var dimensao = 2 * (comprimento * altura + largura * altura);
-        var quantAzulejos = dimensão / 1.5;
+        var quantAzulejos = dimensao / 1.5;
         return quantAzulejos;
     }
 
