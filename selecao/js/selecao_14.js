@@ -8,7 +8,6 @@ function controllerOrdem() {
 }
 
 function calcular(valor1 = 0, valor2 = 0) {
-    var temp = 0;
     if (valor1 > valor2) {
         return "O Grêmio é vencedor"
     }
